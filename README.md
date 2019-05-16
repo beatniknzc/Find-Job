@@ -7,7 +7,7 @@ Java学习随笔
    - [端口及服务](#端口及服务)
  - [并发编程](#并发编程)
    - [线程安全性](#线程安全性)
-   - [CAS算法](#CAS算法）
+   
    
 
 
@@ -29,8 +29,7 @@ UDP(User Datagram Protocol)<br>
 TCP(Transmission Control Protocol)<br>
     TCP充分实现了数据传输时各种控制功能，可以进行丢包的重发控制，还可以对次序乱掉的分包进行顺序控制。而这些在UDP中都没有。此外，TCP作为一种面向有连接的协议，只有在确认通信对端存在时才会发送数据，从而可以控制通信流量的浪费。<br>
 ## 端口及服务
-（https://pic1.zhimg.com/80/v2-e584c505e895441d7b52c8f3c02c9770_hd.png）
-
+![这里随便写文字](https://pic1.zhimg.com/80/v2-e584c505e895441d7b52c8f3c02c9770_hd.png)
 # 并发编程
 ## 线程安全性
 当多个线程访问某个类时，不管运行时环境采用`何种调度方式`或者这些进程将如何交替执行，并且在主调代码中`不需要任何额外的同步或协同`，这个类都能变现出`正确的行为`,那么就成这个类是线程安全的。<br>
@@ -40,8 +39,7 @@ TCP(Transmission Control Protocol)<br>
 ## CAS算法
 
 CAS算法主要关心3个值：内存值V，预期值A，要更新的新值B。
-
-（https://img-blog.csdn.net/20170709134204310?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxNDIzMTg4OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast）
+![这里随便写文字](https://img-blog.csdn.net/20170709134204310?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxNDIzMTg4OQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 注：t1，t2线程是同时更新同一变量56的值
 因为t1和t2线程都同时去访问同一变量56，所以他们会把主内存的值完全拷贝一份到自己的工作内存空间，所以t1和t2线程值都为56
